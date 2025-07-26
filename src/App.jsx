@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-
+const [number,setNumber] = useState(5) 
 
   return (
     <>
@@ -12,6 +12,8 @@ function App() {
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
+        <button onClick={() => setNumber(number + 5)} >click here</button>
+        <p>{number}</p>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
