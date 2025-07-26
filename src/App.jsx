@@ -4,6 +4,7 @@ import './App.css'
 import OurHeader from './components/OurHeader';
 import TimeArea from './components/TimeArea';
 import Footer from './components/Footer';
+import Pet from './components/Pet';
 const arr = [1,2,3,4];
 function App() {
 
@@ -11,16 +12,13 @@ function App() {
   return (
     <>
       <h1>react</h1>
-      <OurHeader/>
+      <OurHeader />
       <TimeArea/>
-      <ol>
-              {arr.map((item,index) => 
-                <li key={index}>{item}</li>
-              )}
-              {arr.sort((a,b) => b - a ).map((item,index) => 
-                           <li key={index}>{item}</li>
-              )}
-      </ol>
+      <ul>
+                <Pet name='Barsik' species='cat' age='66'/>
+                <Pet name='Lily' species='dog' age='3'/>
+                <Pet name='Flaffy' species='rabbit' age='5'/>
+      </ul>
       <Footer/>
     </>
   )
