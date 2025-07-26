@@ -1,13 +1,21 @@
 import React from 'react'
-import ReactDOM from 'react-dom';
-import './App.css'
 
+import './App.css'
+const arr = [1,2,3,4];
 function App() {
 
 
   return (
     <>
       <h1>react</h1>
+      <ul>
+              {arr.map((item,index) => 
+                <li key={index}>{item}</li>
+              )}
+              {arr.sort((a,b) => b - a ).map((item,index) => 
+                           <li key={index}>{item}</li>
+              )}
+      </ul>
     </>
   )
 }
