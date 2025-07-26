@@ -8,14 +8,14 @@ function App() {
   return (
     <>
       <h1>react</h1>
-      <ul>
+      <ol>
               {arr.map((item,index) => 
                 <li key={index}>{item}</li>
               )}
               {arr.sort((a,b) => b - a ).map((item,index) => 
                            <li key={index}>{item}</li>
               )}
-      </ul>
+      </ol>
     </>
   )
 }
