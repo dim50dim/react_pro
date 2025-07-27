@@ -5,7 +5,7 @@ import OurHeader from './components/OurHeader';
 import TimeArea from './components/TimeArea';
 import Footer from './components/Footer';
 import Pet from './components/Pet';
-const arr = [1,2,3,4];
+
 function App() {
 
 
