@@ -22,8 +22,7 @@ function App() {
       <OurHeader />
       <TimeArea/>
       <ul>
-          {[<li>Hello</li>, <li>Hey</li>]}
-            
+                {pets.map(())}
       </ul>
       <Footer/>
     </>
