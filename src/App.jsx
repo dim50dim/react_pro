@@ -22,7 +22,7 @@ function App() {
       <OurHeader />
       <TimeArea/>
       <ul>
-                {pets.map(())}
+                {pets.map((pet) )}
       </ul>
       <Footer/>
     </>
