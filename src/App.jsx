@@ -6,6 +6,7 @@ import TimeArea from './components/TimeArea';
 import Footer from './components/Footer';
 import Pet from './components/Pet';
 
+
 function App() {
 
 
