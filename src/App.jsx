@@ -22,9 +22,8 @@ function App() {
       <OurHeader />
       <TimeArea/>
       <ul>
-                <Pet name='Barsik' species='cat' age='66'/>
-                <Pet name='Lily' species='dog' age='3'/>
-                <Pet name='Flaffy' species='rabbit' age='5'/>
+          {[<li>Hello</li>, <li>Hey</li>]}
+            
       </ul>
       <Footer/>
     </>
