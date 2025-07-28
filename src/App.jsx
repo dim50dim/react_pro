@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import './App.css'
 import OurHeader from './components/OurHeader';
 import TimeArea from './components/TimeArea';
 import Footer from './components/Footer';
 import Pet from './components/Pet';
+
 
 const pets = [
   { name: "Meowsalot", species: "cat", age: "5", id: 123456789 },
@@ -14,7 +15,7 @@ const pets = [
   { name: "Paws", species: "dog", age: "6", id: 789789789 }
 ]
 function App() {
-
+const [] = useState()
 
   return (
     <>
@@ -25,7 +26,7 @@ function App() {
                 {pets.map(pet =>
                  <li>  <Pet name={pet.name} species={pet.species} age={pet.age} id={pet.id}/></li>)}
       </ul>
-      
+
       <Footer/>
     </>
   )
