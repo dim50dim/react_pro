@@ -1,9 +1,13 @@
 import React from 'react'
 
 const AddPetForm = () => {
+function handleSubmit(e) {
+    e.preventDefault()
+    alert('thank you for submit the form')
+}
   return (
     <div>
-          <form>
+          <form onSubmit={handleSubmit}>
       <fieldset>
         <legend>Add New Pet</legend>
         <input placeholder="Name" />

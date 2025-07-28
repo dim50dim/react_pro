@@ -6,6 +6,7 @@ import TimeArea from './components/TimeArea';
 import Footer from './components/Footer';
 import Pet from './components/Pet';
 import LikeArea from './components/LikeArea';
+import AddPetForm from './components/AddPetForm';
 
 
 const pets = [
@@ -24,6 +25,7 @@ function App() {
       <OurHeader />
       <LikeArea/>
       <TimeArea/>
+      <AddPetForm/>
       <ul>
                 {pets.map(pet =>
                  <li>  <Pet name={pet.name} species={pet.species} age={pet.age} id={pet.id}/></li>)}
