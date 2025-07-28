@@ -26,7 +26,7 @@ function App() {
       <OurHeader />
       <LikeArea/>
       <TimeArea/>
-      <AddPetForm/>
+      <AddPetForm setPets={setPets} />
       <ul>
                 {pets.map(pet =>
                  <li>  <Pet name={pet.name} species={pet.species} age={pet.age} id={pet.id}/></li>)}

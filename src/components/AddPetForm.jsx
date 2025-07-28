@@ -1,9 +1,9 @@
 import React from 'react'
 
-const AddPetForm = () => {
+const AddPetForm = (props) => {
 function handleSubmit(e) {
     e.preventDefault()
-    alert('thank you for submit the form')
+      props.setPets();
 }
   return (
     <div>
