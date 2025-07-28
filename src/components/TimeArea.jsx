@@ -3,7 +3,7 @@ import React from 'react'
 const TimeArea = () => {
   return (
     <div>
-        <h2>TimeArea</h2>
+       <p>The current time is {new Date().toLocaleString()}.</p>
     </div>
   )
 }
