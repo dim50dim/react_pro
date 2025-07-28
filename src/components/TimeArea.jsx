@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
 const TimeArea = () => {
-  useState(new Date().toLocaleString())
+  const [time,setTime] = useState(new Date().toLocaleString())
   return (
     <div>
-       <p>The current time is {new Date().toLocaleString()}.</p>
+       <p>The current time is {time}.</p>
     </div>
   )
 }
