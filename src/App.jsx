@@ -5,6 +5,7 @@ import OurHeader from './components/OurHeader';
 import TimeArea from './components/TimeArea';
 import Footer from './components/Footer';
 import Pet from './components/Pet';
+import LikeArea from './components/LikeArea';
 
 
 const pets = [
@@ -15,12 +16,13 @@ const pets = [
   { name: "Paws", species: "dog", age: "6", id: 789789789 }
 ]
 function App() {
-const [] = useState()
+
 
   return (
     <>
       <h1>react</h1>
       <OurHeader />
+      <LikeArea/>
       <TimeArea/>
       <ul>
                 {pets.map(pet =>

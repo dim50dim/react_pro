@@ -13,4 +13,4 @@ const TimeArea = () => {
   )
 }
 
-export default TimeArea
+export default TimeArea;
