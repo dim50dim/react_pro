@@ -27,10 +27,10 @@ function App() {
       <LikeArea/>
       <TimeArea/>
       <AddPetForm setPets={setPets} />
-      <ul>
+      <ol>
                 {pets.map(pet =>
                  <li>  <Pet name={pet.name} species={pet.species} age={pet.age} id={pet.id}/></li>)}
-      </ul>
+      </ol>
 
       <Footer/>
     </>
