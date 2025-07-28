@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const LikeArea = () => {
-    
+    const [like,setLike] = useState(0)
+    const increaseLikeHandler = () => {
+       setLike(like + 1);
+    }
+    const decreaseLikeHandler = () => {
+        setLike(like - 1);
+    }
   return (
     <div>
-        <button onClick={} >Increase likes</button>
-        <button onClick={}>Decrease likes</button>
-        <h2>This page has been liked 0 times</h2>
+        <button onClick={increaseLikeHandler} >Increase likes</button>
+        <button onClick={decreaseLikeHandler}>Decrease likes</button>
+        <h2>This page has been liked {like} times</h2>
     </div>
   )
 }
