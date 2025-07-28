@@ -6,10 +6,7 @@ const LikeArea = () => {
        setLike(like + 1);
     }
     const decreaseLikeHandler = () => {
-       setLike(prev => {
-        if(prev > 0) return prev -1;
-        else return 0;
-       })
+       setLike(prev => prev > 0 ? prev - 1 : 0)
     }
   return (
     <div>
