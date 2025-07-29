@@ -14,8 +14,14 @@ function App() {
    const [pets,setPets] = useState([])
 //only run once the first time this component is rendered
    useEffect(() => {
+       
+   },[])
+
+   // run every time our pet state changes
+
+   useEffect(() => {
     
-   })
+   },[pets])
   return (
     <>
       <h1>react</h1>
