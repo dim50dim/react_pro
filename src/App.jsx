@@ -29,7 +29,7 @@ function App() {
       <AddPetForm setPets={setPets} />
       <ol>
                 {pets.map(pet =>
-                 <li>  <Pet name={pet.name} species={pet.species} age={pet.age} id={pet.id}/></li>)}
+                 <li>  <Pet setPets={setPets} name={pet.name} species={pet.species} age={pet.age} id={pet.id}/></li>)}
       </ol>
 
       <Footer/>
