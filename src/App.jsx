@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import './App.css'
 import OurHeader from './components/OurHeader';
@@ -13,6 +13,9 @@ import AddPetForm from './components/AddPetForm';
 function App() {
    const [pets,setPets] = useState([])
 //only run once the first time this component is rendered
+   useEffect(() => {
+    
+   })
   return (
     <>
       <h1>react</h1>
