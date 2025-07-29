@@ -3,7 +3,8 @@ import React, { useEffect, useState } from 'react'
 const TimeArea = () => {
   const [time,setTime] = useState(new Date().toLocaleString());
     useEffect(() => {
-      setInterval(() => setTime(new Date().toLocaleString()),1000)
+     const interval =   setInterval(() => setTime(new Date().toLocaleString()),1000)
+     return() => clearInterval(interval)
     })
   return (
     <div>
