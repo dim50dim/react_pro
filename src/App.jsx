@@ -14,13 +14,15 @@ function App() {
    const [pets,setPets] = useState([])
 //only run once the first time this component is rendered
    useEffect(() => {
-       
+       if(localStorage.getItem('examplePetData')) {
+        setPets(JSON.parse(localStorage.getItem('examplePetData')))
+       }
    },[])
 
    // run every time our pet state changes
 
    useEffect(() => {
-    
+     localStorage.setItem('examplePetData',JSON.stringify(pets))
    },[pets])
   return (
     <>
