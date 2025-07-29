@@ -2,7 +2,7 @@
 
 const Pet = (props) => {
   function handleDelete() {
-    
+    props.setPets(prev=> prev.filter(pet => pet.id !== props.id));
   }
   return (
     <div>
